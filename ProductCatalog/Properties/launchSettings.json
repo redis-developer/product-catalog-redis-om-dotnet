@@ -1,0 +1,33 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:58442",
+      "sslPort": 44391
+    }
+  },
+  "profiles": {
+    "ProductCatalog": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7161;http://localhost:5118",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy",
+        "DYLD_LIBRARY_PATH": "/opt/homebrew/lib",
+        "DATASET_ROOT": "/Users/steve.lorello/Downloads/fashion-dataset"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy",
+        "DYLD_LIBRARY_PATH": "/opt/homebrew/lib",
+        "DATASET_ROOT": "/Users/steve.lorello/Downloads/fashion-dataset"
+      }
+    }
+  }
+}

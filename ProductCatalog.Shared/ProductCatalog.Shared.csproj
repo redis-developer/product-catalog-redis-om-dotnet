@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>        
+<!--        <PackageReference Include="LG.Microsoft.ML.DnnImageFeaturizer.ResNet18" Version="0.18.0.4" />        -->
+        <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="7.0.2" />
+        <PackageReference Include="Redis.OM" Version="0.6.0" />
+        <PackageReference Include="Redis.OM.Vectorizers.AllMiniLML6V2" Version="0.6.0" />
+        <PackageReference Include="Redis.OM.Vectorizers.Resnet18" Version="0.6.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Resources\model.onnx" />
+      <None Remove="Resources\vocab.txt" />
+    </ItemGroup>
+
+</Project>
