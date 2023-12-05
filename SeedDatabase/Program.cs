@@ -61,7 +61,7 @@ for (var offset = 0; offset < records.Length; offset += chunkSize)
     var insertionTasks = new List<Task>();
     DrawProgressBar(offset, records.Length, 50, watch.ElapsedMilliseconds, "generating");    
     var imageVectors = ImageVectorizer.VectorizeFiles(records.Skip(offset).Take(chunkSize).Select(x=> $"{dataSetRoot}/images/{x["id"]}.jpg"));
-    var sentenceVectors = SentenceVectorizer.Encode(records.Select(x => x["productDisplayName"]).Skip(offset).Take(chunkSize).ToArray());    
+    var sentenceVectors = SentenceVectorizer.Vectorize(records.Select(x => x["productDisplayName"]).Skip(offset).Take(chunkSize).ToArray());
     for (var i = 0; i < imageVectors.Length; i++)
     {
         var dict = records[offset + i];
