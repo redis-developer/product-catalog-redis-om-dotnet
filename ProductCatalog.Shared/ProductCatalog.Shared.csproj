@@ -8,9 +8,9 @@
     <ItemGroup>        
 <!--        <PackageReference Include="LG.Microsoft.ML.DnnImageFeaturizer.ResNet18" Version="0.18.0.4" />        -->
         <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="7.0.2" />
-        <PackageReference Include="Redis.OM" Version="0.6.0" />
-        <PackageReference Include="Redis.OM.Vectorizers.AllMiniLML6V2" Version="0.6.0" />
-        <PackageReference Include="Redis.OM.Vectorizers.Resnet18" Version="0.6.0" />
+        <PackageReference Include="Redis.OM" Version="0.6.1" />
+        <PackageReference Include="Redis.OM.Vectorizers.AllMiniLML6V2" Version="0.6.1" />
+        <PackageReference Include="Redis.OM.Vectorizers.Resnet18" Version="0.6.1" />
     </ItemGroup>
     <ItemGroup>
       <None Remove="Resources\model.onnx" />
